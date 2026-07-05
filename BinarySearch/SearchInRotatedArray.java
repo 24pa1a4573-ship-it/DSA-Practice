@@ -9,7 +9,7 @@ class Solution {
        while(st<=end){
         int mid=st+(end-st)/2;
         if(nums[mid]==k) return mid;
-        else if(nums[mid]>nums[st]){
+        if(nums[mid]>=nums[st]){
             if(k<nums[mid] && k>=nums[st]) end=mid-1;
             else st=mid+1;
         }
