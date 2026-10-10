@@ -1,0 +1,21 @@
+/* Approach: Using Binary Search logic with some maths.
+  TC:O(log N)
+  SP:O(1)
+*/
+
+class Solution {
+    public int singleNonDuplicate(int[] nums) {
+        int st=0, end=nums.length-1;
+        while(st<end){
+            int mid=st+(end-st)/2;
+            if(mid%2==1){
+                mid--;
+            }
+            if(nums[mid]==nums[mid+1]) st=mid+2;
+            else end=mid;
+        }
+        return nums[st];
+    }
+}
+
+// The problem is easy when we understand the index's of pairs before single element and after element.
