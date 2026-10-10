@@ -1,2 +1,2 @@
 # DSA-Practice
-  To Check how my consistency is Maintained.
+  To Check how my consistency is Maintained..
